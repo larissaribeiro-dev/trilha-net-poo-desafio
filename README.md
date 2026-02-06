@@ -1,22 +1,33 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# 📱 Modelagem de Sistema de Smartphones com POO
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+Este projeto foi desenvolvido para consolidar os pilares da **Programação Orientada a Objetos (POO)** utilizando C#. O desafio consistiu em criar uma abstração de smartphones, permitindo que diferentes marcas (Nokia e iPhone) compartilhem uma base comum, mas mantenham comportamentos específicos.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+## 🎯 O Desafio
+O objetivo era criar um sistema que suporte diferentes fabricantes de celulares através de:
+1. Uma **Classe Abstrata** base para evitar instaciações indevidas.
+2. **Herança** para reutilização de atributos comuns (Número, Modelo, IMEI, Memória).
+3. **Sobrescrita de Métodos (Override)** para que cada marca implemente sua própria lógica de instalação de apps.
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
 
-![Diagrama classes](Imagens/diagrama.png)
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+## 🧠 Pilares de POO Aplicados
+* **Abstração:** Criação da classe `Smartphone`, que serve apenas como um "molde" para outras classes.
+* **Herança:** As classes `Nokia` e `Iphone` herdam as propriedades e métodos da classe pai.
+* **Polimorfismo:** O método `InstalarAplicativo` é abstrato na classe pai e ganha implementações únicas nas classes filhas.
+* **Encapsulamento:** Propriedades como `Modelo`, `IMEI` e `Memoria` foram protegidas para garantir a integridade dos dados do objeto.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## 🛠️ Tecnologias Utilizadas
+* **Linguagem:** C#
+* **Paradigma:** Orientação a Objetos (POO)
+* **Ambiente:** .NET 6.0 ou superior
+
+## 🚀 Como Executar
+1. Clone o repositório.
+2. Abra no Visual Studio ou VS Code.
+3. Execute o comando `dotnet run`. O console mostrará a simulação de uso de ambos os aparelhos, demonstrando o polimorfismo em ação.
+
+---
+
+A implementação utiliza construtores base (`base`) para passar parâmetros das classes filhas para a classe pai, garantindo uma inicialização limpa e organizada dos objetos.
+
+[Meu GitHub](https://github.com/larissaribeiro-dev)
