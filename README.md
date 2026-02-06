@@ -1,10 +1,10 @@
 # 📱 Modelagem de Sistema de Smartphones com POO
 
-Este projeto foi desenvolvido para consolidar os pilares da **Programação Orientada a Objetos (POO)** utilizando C#. O desafio consistiu em criar uma abstração de smartphones, permitindo que diferentes marcas (Nokia e iPhone) compartilhem uma base comum, mas mantenham comportamentos específicos.
+Este projeto foi desenvolvido como parte do desafio prático de **Programação Orientada a Objetos (POO)** da trilha .NET da **DIO (Digital Innovation One)**. O objetivo foi aplicar na prática os pilares da POO utilizando C#, modelando um sistema de smartphones de marcas distintas.
 
 ## 🎯 O Desafio
-O objetivo era criar um sistema que suporte diferentes fabricantes de celulares através de:
-1. Uma **Classe Abstrata** base para evitar instaciações indevidas.
+Proposto no bootcamp TIVIT - .Net com GitHub Copilot, o desafio consistiu em abstrair o funcionamento de celulares para que diferentes marcas (Nokia e iPhone) compartilhem uma base comum, mas mantenham comportamentos específicos através de:
+1. Uma **Classe Abstrata** base para evitar instanciações indevidas.
 2. **Herança** para reutilização de atributos comuns (Número, Modelo, IMEI, Memória).
 3. **Sobrescrita de Métodos (Override)** para que cada marca implemente sua própria lógica de instalação de apps.
 
