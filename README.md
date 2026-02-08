@@ -1,13 +1,17 @@
-# 📱 Modelagem de Sistema de Smartphones com POO
+# DIO - Trilha .NET - Programação orientada a objetos
+www.dio.me
 
-Este projeto foi desenvolvido como parte do desafio prático de **Programação Orientada a Objetos (POO)** da trilha .NET da **DIO (Digital Innovation One)**. O objetivo foi aplicar na prática os pilares da POO utilizando C#, modelando um sistema de smartphones de marcas distintas.
+## Desafio de projeto
+Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
 
-## 🎯 O Desafio
-Proposto no bootcamp TIVIT - .Net com GitHub Copilot, o desafio consistiu em abstrair o funcionamento de celulares para que diferentes marcas (Nokia e iPhone) compartilhem uma base comum, mas mantenham comportamentos específicos através de:
-1. Uma **Classe Abstrata** base para evitar instanciações indevidas.
-2. **Herança** para reutilização de atributos comuns (Número, Modelo, IMEI, Memória).
-3. **Sobrescrita de Métodos (Override)** para que cada marca implemente sua própria lógica de instalação de apps.
+## Contexto
+Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
 
+## Proposta
+Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
+Você deve criar as suas classes de acordo com o diagrama abaixo:
+
+![Diagrama classes](Imagens/diagrama.png)
 
 
 ## 🧠 Pilares de POO Aplicados
@@ -29,5 +33,3 @@ Proposto no bootcamp TIVIT - .Net com GitHub Copilot, o desafio consistiu em abs
 ---
 
 A implementação utiliza construtores base (`base`) para passar parâmetros das classes filhas para a classe pai, garantindo uma inicialização limpa e organizada dos objetos.
-
-[Meu GitHub](https://github.com/larissaribeiro-dev)
